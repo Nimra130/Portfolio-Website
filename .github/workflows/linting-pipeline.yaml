@@ -12,20 +12,20 @@ jobs:
   linting-job:
     runs-on: ubuntu-latest
   steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Install HTMLHint
-        run: npm install --save-dev htmlhint
+    - name: Install HTMLHint
+      run: npm install --save-dev htmlhint
 
-      - name: Install Stylelint
-        run: npm install --save-dev stylelint
+    - name: Install Stylelint
+      run: npm install --save-dev stylelint
 
-      - name: Lint HTML Files
-        run: npx htmlhint "**/*.html"
+    - name: Lint HTML Files
+      run: npx htmlhint "**/*.html"
 
-      - name: Lint CSS Files
-        run: npx stylelint "**/*.css"
+    - name: Lint CSS Files
+      run: npx stylelint "**/*.css"
 
-      - name: Display Package.json Contents
-        run: cat package.json
+    - name: Display Package.json Contents
+      run: cat package.json
