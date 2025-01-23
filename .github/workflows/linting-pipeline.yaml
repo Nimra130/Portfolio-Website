@@ -1,5 +1,4 @@
 name: Linting workflows
-
 on:
   push:
     branches:
@@ -11,7 +10,7 @@ on:
 jobs:
   linting-job:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
+
     steps:
       # Step 1: Checkout repository
       - name: Checkout repository
@@ -53,6 +52,3 @@ jobs:
     - name: Lint CSS Files
       run: npx stylelint "**/*.css"
 
-    - name: Display Package.json Contents
-      run: cat package.json
->>>>>>> develop
