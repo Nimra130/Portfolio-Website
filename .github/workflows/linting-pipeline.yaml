@@ -35,20 +35,4 @@ jobs:
       # Step 6: Display Package.json
       - name: Display Package.json Contents
         run: cat package.json
-=======
-  steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-
-    - name: Install HTMLHint
-      run: npm install --save-dev htmlhint
-
-    - name: Install Stylelint
-      run: npm install --save-dev stylelint
-
-    - name: Lint HTML Files
-      run: npx htmlhint "**/*.html"
-
-    - name: Lint CSS Files
-      run: npx stylelint "**/*.css"
 
