@@ -26,11 +26,11 @@ jobs:
 
       # Step 4: Lint HTML Files
       - name: Lint HTML Files
-        run: npx htmlhint "**/*.html"
+        run:  run npx htmlhint "**/*.html"
 
       # Step 5: Lint CSS Files
       - name: Lint CSS Files
-        run: npx stylelint "**/*.css"
+        run:  run npx stylelint "**/*.css"
 
       # Step 6: Display Package.json
       - name: Display Package.json Contents
