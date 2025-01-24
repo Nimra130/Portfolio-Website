@@ -26,7 +26,8 @@ jobs:
 
       # Step 4: Lint HTML Files
       - name: Lint HTML Files
-        run:  npx htmlhint "**/*.html"
+        run: npx htmlhint "**/*.html"
+
 
       # Step 5: Lint CSS Files
       - name: Lint CSS Files
