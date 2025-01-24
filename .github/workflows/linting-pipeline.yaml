@@ -17,11 +17,11 @@ jobs:
         uses: actions/checkout@v4
 
       # Step 2: Install HTMLHint
-      - name: Install HTMLHint
+      - name: Install htmlhint
         run: npm install --save-dev htmlhint
 
       # Step 3: Install Stylelint
-      - name: Install Stylelint
+      - name: Install stylelint
         run: npm install --save-dev stylelint
 
       # Step 4: Lint HTML Files
